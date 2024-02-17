@@ -7,17 +7,17 @@ import TransactionList from "./components/TransactionList";
 import { GlobalProvider } from "./context/GlobalState";
 
 function App() {
-	return (
-		<GlobalProvider>
-			<Title />
-			<div className="container">
-				<Balance />
-				<IncomeExpense />
-				<TransactionList />
-				<AddTransaction />
-			</div>
-		</GlobalProvider>
-	);
+  return (
+    <GlobalProvider>
+      <Title />
+      <div className="container">
+        <Balance />
+        <IncomeExpense />
+        <TransactionList />
+        <AddTransaction />
+      </div>
+    </GlobalProvider>
+  );
 }
 
 export default App;

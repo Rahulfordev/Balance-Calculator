@@ -13,7 +13,7 @@ const AddTransaction = () => {
     const newTransaction = {
       id: Date.now(),
       text,
-      amount,
+      amount: +amount,
     };
 
     addTransaction(newTransaction);
@@ -40,7 +40,7 @@ const AddTransaction = () => {
           </label>
           <input
             type="number"
-            value={amount}
+            value={amount === 0 ? null : amount}
             onChange={(e) => setAmount(e.target.value)}
             placeholder="Enter amount..."
           />

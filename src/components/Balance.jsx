@@ -5,7 +5,7 @@ const Balance = () => {
   const { transactions } = useContext(GlobalContext);
 
   const amounts = transactions.map((transaction) => transaction.amount);
-  const total = amounts.reduce((acc, curr) => (acc += +curr), 0);
+  const total = amounts.reduce((acc, curr) => (acc += curr), 0);
 
   return (
     <>
